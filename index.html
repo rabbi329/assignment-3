@@ -20,9 +20,182 @@
 
             }
         </style>
+        <!-- primary color -->
+        <script>
+            module.exports = {
+            theme: {
+                extend: {
+                colors: {
+                    'hero': '#F85559',
+                },
+                }
+            }
+            }
+
+
+        </script>
+        <!-- font awsome -->
+        <script src="https://kit.fontawesome.com/4259443afb.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class="font-[lato]">
+ <nav>
+   <div class="max-screen-xl mt-14 ml-60 mr-60 mb-13 flex justify-between bg-[#F85559] px-10  ">
+     <div>
+       <ul class=" px-7 py-14 flex gap-7 py-7 text-lg  md:flex-row ">
+         <li><a href="">Home</a></li>
+         <li><a href="">About</a></li>
+         <li><a href="">Shop</a></li>
+         <li><a href="">All fruits</a></li>
+       </ul>
+     </div>
+     <div class="flex items-center ">
+       
+       <img class="w-13 h-15" src="./images/logo.png" alt="">
+       <h1 class="text-5xl font-bold font-[lato]">
+        Fruits Brust
+      </h1>
+     </div>
+     <div class="py-7 ">
+      <input type="text" placeholder="search here" class="input input-bordered rounded-full input-sm max-w-xs" />
+     </div>
+   </div>
+ </nav>
+      <!-- hero section -->
+  <main class="relative">
+    <div class="max-screen-xl mr-60 ml-60 mt-8">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./images/banner1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./images/banner2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./images/banner3.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./images/banner4.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
     
+<!-- bonas -->
+
+<section class="-bottom-10 left-72 right-72 mx-80 max-w-7xl flex gap-10    rounded bg-white py-12 px-12 absolute">
+  <div class="text-center">
+    <img src="./images/fruit1.png" alt="">
+    <p>Strawberry</p>
+  </div>
+  <div class="text-center">
+    <img src="./images/fruit2.png" alt="">
+    <p>Orange</p>
+  </div>
+  <div class="text-center">
+    <img src="./images/fruit3.png" alt="">
+    <p>Mango</p>
+  </div>
+  <div class="text-center">
+    <img src="./images/fruit4.png" alt="">
+    <p>Strawberry</p>
+  </div>
+  <div class="text-center">
+    <img src="./images/fruit5.png" alt="">
+    <p>Mango</p>
+  </div>
+</section>
+  </main>
+<section>
+  <!-- end -->
+<!-- deal of the day -->
+<div class="max-w-screen-7xl mt-48 mr-80 ml-80 flex justify-between">
+  <!-- div1 -->
+    <div>
+      <h1 class="text-5xl font-extrabold py-3">Deal of the day</h1>
+     <p class="text-base text-black">
+      Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
+     </p>
+    </div>
+    <!-- div-2 -->
+    <div>
+      <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-5xl">
+            <span style="--value:15;"></span>
+          </span>
+          days
+        </div> 
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-5xl">
+            <span style="--value:10;"></span>
+          </span>
+          hours
+        </div> 
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-5xl">
+            <span style="--value:24;"></span>
+          </span>
+          min
+        </div> 
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-5xl">
+            <span style="--value:33;"></span>
+          </span>
+          sec
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end -->
+<!-- card section -->
+<section>
+  <div>
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Apple</h2>
+
+        <!-- rating -->
+
+        <div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        </div>
+    <!--  card modal-->
+        <div class="card-actions">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <footer>
+
+
+    </footer>
 </body>
 </html>
